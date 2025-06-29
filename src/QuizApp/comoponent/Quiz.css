@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9dc1b2;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: rgb(219, 227, 222);
+  width: 500px;
+}
+@media screen and (max-width:500px) {
+  .quiz{
+    width: 300px;
+    
+  }
+  .btns{
+   display: flex;
+   flex-direction: column;
+  
+  }
+
+  li{
+    padding: 3px 6rem;
+  }
+    .questionMark{
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 10px;
+  margin-left:4rem ;
+}
+.answer{
+  position: relative;
+  top: 1px;
+  right: 7rem;
+  border-radius: 10px;
+}
+  
+}
+@media screen and (min-width:500px){
+  li{
+     padding: 3px 10rem;
+  }
+    button{
+  margin: 0 8rem;
+  }
+  .questionMark{
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 10px;
+  margin-left:9rem ;
+}
+.answer{
+  position: relative;
+  top: 1px;
+  right: 12rem;
+  border-radius: 10px;
+}
+}
+.quiz hr {
+  border: 1.5px solid rgb(187, 167, 167);
+  width: 100%;
+}
+ul {
+  display: inline-block;
+}
+li {
+  border: 1px solid rgb(186, 180, 180);
+  margin-top: 10px;
+ 
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.quiz {
+  border: 1px solid rgb(199, 172, 172);
+  border-radius: 10px;
+}
+button {
+  margin-top: 1rem;
+  color: white;
+  background: rgb(10, 23, 23);
+  padding: 5px 10px;
+  border-radius: 7px;
+  width: 70px;
+  font-weight: bold;
+
+}
+h1 {
+  font-weight: bold;
+  padding: 1rem;
+}
+h2 {
+  font-weight: bold;
+  font-family: monospace;
+}
+p {
+  padding: 0.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+.correct {
+  background: #abf5d8;
+  border: 1px solid rgb(58, 205, 156);
+}
+.wrong {
+  background: rgb(253, 203, 203);
+  border: 0.5px solid rgb(247, 77, 77);
+}
+.timg{
+  display: flex;
+  justify-content: space-between;
+   width: 80px;
+  height: 70px;
+  
+}
+
+.results{
+  margin-bottom: 1rem;
+}
+.btns{
+  display: flex;
+padding: 1rem;
+}
