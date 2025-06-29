@@ -21,7 +21,7 @@ export const Quiz = () => {
     if (check === false) {
       //Check select one choise answer
       if (question.ans === ans) {
-        //Check answer multiple choices 
+        //Check answer multiple choicess
         e.target.classList.add("correct");
         setCheck(true);
         setScore((prev) => prev + 1);
